@@ -10,10 +10,10 @@ package com.mycompany.planchejoliveautp3;
  * @author Yann
  */
 public class Facture {
-public String mailClient;
-public float montantTotal;
+private String mailClient;
+private float montantTotal;
 
-public Produit [] tabProduitAchete; 
+private Produit [] tabProduitAchete; 
 
 
 }

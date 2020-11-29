@@ -11,12 +11,16 @@ import java.time.format.DateTimeFormatter ;
  * @author Yann Jolivea Amélie Planche
  */
 public class Produit {
-public String reference ;
-public String designation;
-public float prixVente;
-public int stock;
+private String reference ;
+private String designation;
+private float prixVente;
+private int stock;
 
-
+public Produit (String designation ,float prixVente, int stock  ){
+    this.designation = designation;
+    this.prixVente= prixVente;
+    this.stock = stock;    
+}
 
 public boolean placerApres(String reference ){
 float temp = 0;
