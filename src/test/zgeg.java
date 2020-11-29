@@ -10,5 +10,7 @@ package test;
  * @author Léo Togg
  */
 public class zgeg {
-    
+    public void zgeg(){
+    System.out.println("gros zgeg");
+}
 }
