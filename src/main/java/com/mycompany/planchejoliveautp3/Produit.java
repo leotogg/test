@@ -43,7 +43,7 @@ String text = date1.format(form);
 //String dateStr = simpleDateFormat.format(new Date()); 
 //System.out.println(dateStr);
 
-public float calculPrix(){
+public void calculPrix(){
      LocalDate date1 = LocalDate.now();
     DateTimeFormatter form = DateTimeFormatter.ofPattern("yyyy mm dd"); 
     String date = date1.format(form);
@@ -57,13 +57,13 @@ public float calculPrix(){
     }else if (PremLettre.equals("D")){
         if (mois == 11){
            float prix = (float) (prixVente - (prixVente*0.1)) ;
-        return (prix) ;
+        
         }
     }else if (PremLettre.equals("T")){
         if (mois == 06){
            float prix ;
-            prix = (float) (prixVente - (prixVente*0.2));
-            return (prix);
+            prixVente = (float) (prixVente - (prixVente*0.2));
+            
         }
     }
    
